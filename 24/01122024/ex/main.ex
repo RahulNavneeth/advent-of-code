@@ -27,7 +27,7 @@ defmodule Main do
           |> Enum.map(fn {x, y} -> abs(x - y) end)
           |> Enum.sum()
 
-        IO.puts(sum)
+        IO.puts("Answer for part two : #{sum}")
 
       {:error, _reason} ->
         IO.puts("Program terminated due to file error.")
@@ -43,7 +43,7 @@ defmodule Main do
           end)
           |> Enum.sum()
 
-        IO.puts(sum)
+        IO.puts("Answer for part one : #{sum}")
 
       {:error, _reason} ->
         IO.puts("Program terminated due to file error.")
